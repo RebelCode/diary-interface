@@ -9,7 +9,9 @@
             "email": "development@rebelcode.com"
         }
     ],
-    "require": {},
+    "require": {
+        "nesbot/carbon": "^1.21"
+    },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
         "phpunit/phpunit": "4.*",
