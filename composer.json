@@ -1,0 +1,23 @@
+{
+    "name": "rebelcode/diary-interface",
+    "description": "Interfaces for the objects used by the Diary library.",
+    "type": "library",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "RebelCode",
+            "email": "development@rebelcode.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "4.*",
+        "ptrofimov/xpmock": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RebelCode\\Diary\\": "src/"
+        }
+    }
+}
