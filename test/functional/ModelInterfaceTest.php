@@ -27,7 +27,6 @@ class ModelInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getId()
-            ->getResourceModel()
             ->new();
 
         return $mock;
