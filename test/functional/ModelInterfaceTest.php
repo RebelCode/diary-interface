@@ -27,6 +27,7 @@ class ModelInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getId()
+            ->getApp()
             ->new();
 
         return $mock;
@@ -42,5 +43,6 @@ class ModelInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
+        $this->assertInstanceOf('\\Dhii\\App\\ModelInterface', $subject);
     }
 }

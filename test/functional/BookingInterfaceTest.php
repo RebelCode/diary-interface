@@ -29,6 +29,7 @@ class BookingInterfaceTest extends TestCase
             ->getId()
             ->getStart()
             ->getEnd()
+            ->getApp()
             ->new();
 
         return $mock;

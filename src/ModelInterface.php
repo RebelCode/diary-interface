@@ -7,7 +7,7 @@ namespace RebelCode\Diary;
  *
  * @since [*next-version*]
  */
-interface ModelInterface
+interface ModelInterface extends \Dhii\App\ModelInterface
 {
     /**
      * Gets the model's ID.
