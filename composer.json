@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": "^5.3 | ^7.0",
-        "nesbot/carbon": "~1.21"
+        "nesbot/carbon": "~1.21",
+        "dhii/app-interface": "dev-master"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
