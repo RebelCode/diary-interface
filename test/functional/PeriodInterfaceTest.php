@@ -5,7 +5,7 @@ namespace RebelCode\Diary\Test;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \RebelCode\Diary\PeriodInterface}.
+ * Tests {@see \RebelCode\Diary\DateTime\PeriodInterface}.
  *
  * @since [*next-version*]
  */
@@ -14,14 +14,14 @@ class PeriodInterfaceTest extends TestCase
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\PeriodInterface';
+    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\DateTime\\PeriodInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \RebelCode\Diary\PeriodInterface
+     * @return \RebelCode\Diary\DateTime\PeriodInterface
      */
     public function createInstance()
     {

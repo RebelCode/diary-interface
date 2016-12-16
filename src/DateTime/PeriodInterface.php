@@ -1,6 +1,6 @@
 <?php
 
-namespace RebelCode\Diary;
+namespace RebelCode\Diary\DateTime;
 
 /**
  * Describes any object that represents a particular period of time.

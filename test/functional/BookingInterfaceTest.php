@@ -46,7 +46,7 @@ class BookingInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
-        $this->assertInstanceOf('\\RebelCode\\Diary\\PeriodInterface', $subject);
+        $this->assertInstanceOf('\\RebelCode\\Diary\\DateTime\\PeriodInterface', $subject);
         $this->assertInstanceOf('\\RebelCode\\Diary\\ModelInterface', $subject);
     }
 }
