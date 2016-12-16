@@ -5,7 +5,7 @@ namespace RebelCode\Diary\Test;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \RebelCode\Diary\BookingInterface}.
+ * Tests {@see \RebelCode\Diary\Model\BookingInterface}.
  *
  * @since [*next-version*]
  */
@@ -14,14 +14,14 @@ class BookingInterfaceTest extends TestCase
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\BookingInterface';
+    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\Model\\BookingInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \RebelCode\Diary\BookingInterface
+     * @return \RebelCode\Diary\Model\BookingInterface
      */
     public function createInstance()
     {
