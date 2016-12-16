@@ -1,11 +1,11 @@
 <?php
 
-namespace RebelCode\Diary\Test\Storage;
+namespace RebelCode\Diary\Test\Component;
 
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \RebelCode\Diary\Storage\StorageAdapterInterface}.
+ * Tests {@see \RebelCode\Diary\Component\StorageAdapterInterface}.
  *
  * @since [*next-version*]
  */
@@ -14,14 +14,14 @@ class StorageAdapterInterfaceTest extends TestCase
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\Storage\\StorageAdapterInterface';
+    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\Component\\StorageAdapterInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \RebelCode\Diary\Storage\StorageAdapterInterface
+     * @return \RebelCode\Diary\Component\StorageAdapterInterface
      */
     public function createInstance()
     {
@@ -43,7 +43,7 @@ class StorageAdapterInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @covers \RebelCode\Diary\Storage\StorageAdapterInterface
+     * @covers \RebelCode\Diary\Component\StorageAdapterInterface
      *
      * @since [*next-version*]
      */
