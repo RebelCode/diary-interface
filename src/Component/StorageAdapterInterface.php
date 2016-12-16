@@ -1,6 +1,6 @@
 <?php
 
-namespace RebelCode\Diary\Storage;
+namespace RebelCode\Diary\Component;
 
 /**
  * Any object that serves as an adapter for communicating with storage.
