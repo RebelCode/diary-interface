@@ -39,6 +39,8 @@ class BookingInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
+     * @covers \RebelCode\Diary\Model\BookingInterface
+     *
      * @since [*next-version*]
      */
     public function testCanBeCreated()

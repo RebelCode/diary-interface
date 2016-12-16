@@ -36,6 +36,8 @@ class PeriodInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
+     * @covers \RebelCode\Diary\DateTime\PeriodInterface
+     *
      * @since [*next-version*]
      */
     public function testCanBeCreated()

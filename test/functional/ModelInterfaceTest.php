@@ -36,6 +36,8 @@ class ModelInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
+     * @covers \RebelCode\Diary\ModelInterface
+     *
      * @since [*next-version*]
      */
     public function testCanBeCreated()
