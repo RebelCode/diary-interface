@@ -1,6 +1,6 @@
 <?php
 
-namespace RebelCode\Diary\Test;
+namespace RebelCode\Diary\Test\Model;
 
 use Xpmock\TestCase;
 
