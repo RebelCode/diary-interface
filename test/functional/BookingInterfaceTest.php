@@ -1,32 +1,35 @@
 <?php
 
-namespace RebelCode\Diary\Test\DateTime;
+namespace RebelCode\Diary\Test;
 
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \RebelCode\Diary\DateTime\DateTimeInterface}.
+ * Tests {@see \RebelCode\Diary\Model\BookingInterface}.
  *
  * @since [*next-version*]
  */
-class DateTimeInterfaceTest extends TestCase
+class BookingInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\DateTime\\DateTimeInterface';
+    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\BookingInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \RebelCode\Diary\DateTime\DateTimeInterface
+     * @return \RebelCode\Diary\BookingInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getTimestamp()
+            ->getId()
+            ->getStart()
+            ->getEnd()
+            ->getMeta()
             ->new();
 
         return $mock;
@@ -35,7 +38,7 @@ class DateTimeInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @covers \RebelCode\Diary\DateTime\DateTimeInterface
+     * @covers \RebelCode\Diary\BookingInterface
      *
      * @since [*next-version*]
      */
@@ -44,5 +47,6 @@ class DateTimeInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
+        $this->assertInstanceOf('\\RebelCode\\Diary\\PeriodInterface', $subject);
     }
 }
