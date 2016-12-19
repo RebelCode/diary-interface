@@ -15,7 +15,10 @@ interface BookingInterface extends ModelInterface, PeriodInterface
     /**
      * Gets the meta data for this booking.
      *
-     * @return array An associative array of meta data keys and values.
+     * @param string $key [optional] The key of the meta data entry to return. Default: null
+     *
+     * @return array If $key is null, an associative array of meta data keys and values.
+     *               If $key is a string, the meta value for that key or null if the key does not exist.
      */
-    public function getMeta();
+    public function getMeta($key = null);
 }
