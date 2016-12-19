@@ -2,7 +2,7 @@
 
 namespace RebelCode\Diary\Test\DateTime;
 
-use \Xpmock\TestCase;
+use Xpmock\TestCase;
 
 /**
  * Tests {@see \RebelCode\Diary\DateTime\DateTimeInterface}.
