@@ -14,7 +14,7 @@ interface PeriodInterface
      *
      * @since [*next-version*]
      *
-     * @return \DateTimeInterface
+     * @return DateTimeInterface
      */
     public function getStart();
 
@@ -23,7 +23,7 @@ interface PeriodInterface
      *
      * @since [*next-version*]
      *
-     * @return \DateTimeInterface
+     * @return DateTimeInterface
      */
     public function getEnd();
 }
