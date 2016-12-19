@@ -1,6 +1,6 @@
 <?php
 
-namespace RebelCode\Diary\Test;
+namespace RebelCode\Diary\Test\Model;
 
 use Xpmock\TestCase;
 
@@ -14,20 +14,19 @@ class ModelInterfaceTest extends TestCase
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\ModelInterface';
+    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\Model\\ModelInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return \RebelCode\Diary\ModelInterface
+     * @return \RebelCode\Diary\Model\ModelInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getId()
-            ->getApp()
             ->new();
 
         return $mock;
@@ -36,7 +35,7 @@ class ModelInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @covers \RebelCode\Diary\ModelInterface
+     * @covers \RebelCode\Diary\Model\ModelInterface
      *
      * @since [*next-version*]
      */
@@ -45,6 +44,5 @@ class ModelInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
-        $this->assertInstanceOf('\\Dhii\\App\\ModelInterface', $subject);
     }
 }

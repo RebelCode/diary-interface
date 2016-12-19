@@ -3,7 +3,6 @@
 namespace RebelCode\Diary\Model;
 
 use RebelCode\Diary\DateTime\PeriodInterface;
-use RebelCode\Diary\ModelInterface;
 
 /**
  * Describes any object that can represent a booked period of time.

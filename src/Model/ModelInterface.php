@@ -1,13 +1,13 @@
 <?php
 
-namespace RebelCode\Diary;
+namespace RebelCode\Diary\Model;
 
 /**
  * An object that represents an entity in the problem domain.
  *
  * @since [*next-version*]
  */
-interface ModelInterface extends \Dhii\App\ModelInterface
+interface ModelInterface
 {
     /**
      * Gets the model's ID.
