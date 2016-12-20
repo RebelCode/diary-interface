@@ -26,10 +26,11 @@ class DiaryInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getStorageAdapter()
-            ->getComponent()
-            ->hasComponent()
-            ->registerComponent()
+            ->queryBookings()
+            ->getBooking()
+            ->insertBooking()
+            ->updateBooking()
+            ->deleteBooking()
             ->new();
 
         return $mock;
