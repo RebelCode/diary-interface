@@ -25,10 +25,5 @@
         "psr-4": {
             "RebelCode\\Diary\\": "src/"
         }
-    },
-    "config": {
-        "platform": {
-            "php": "5.3.29"
-        }
     }
 }
