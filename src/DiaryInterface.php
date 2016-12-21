@@ -12,11 +12,11 @@ interface DiaryInterface
     /**
      * Gets the booking with the given ID.
      *
-     * @param string|int $id The ID of the booking.
+     * @param string|int $bookingId The ID of the booking.
      *
      * @return BookingInterface|null The booking with the given ID or null if the ID was not found.
      */
-    public function getBooking($id);
+    public function getBooking($bookingId);
 
     /**
      * Queries the storage for bookings.
@@ -50,9 +50,9 @@ interface DiaryInterface
     /**
      * Deletes the booking with the given ID.
      *
-     * @param string|int $id The ID of the booking.
+     * @param string|int $bookingId The ID of the booking.
      *
      * @return bool True on success, false on failure.
      */
-    public function deleteBooking($id);
+    public function deleteBooking($bookingId);
 }
