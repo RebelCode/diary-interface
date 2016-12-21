@@ -21,6 +21,8 @@ interface BookingInterface extends PeriodInterface
     /**
      * Gets the meta data for this booking.
      *
+     * @since [*next-version*]
+     *
      * @param string $key [optional] The key of the meta data entry to return. Default: null
      *
      * @return array If $key is null, an associative array of meta data keys and values.

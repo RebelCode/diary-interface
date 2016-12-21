@@ -12,6 +12,8 @@ interface DiaryInterface
     /**
      * Gets the booking with the given ID.
      *
+     * @since [*next-version*]
+     *
      * @param string|int $bookingId The ID of the booking.
      *
      * @return BookingInterface|null The booking with the given ID or null if the ID was not found.
@@ -20,6 +22,8 @@ interface DiaryInterface
 
     /**
      * Queries the storage for bookings.
+     *
+     * @since [*next-version*]
      *
      * @param mixed $query The query.
      *
@@ -32,6 +36,8 @@ interface DiaryInterface
      *
      * The ID of the given instance will be ignored. An ID will be assigned to the booking on success.
      *
+     * @since [*next-version*]
+     *
      * @param BookingInterface $booking The booking instance.
      *
      * @return string|int The ID of the inserted booking or false on failure.
@@ -41,6 +47,8 @@ interface DiaryInterface
     /**
      * Updates an existing booking.
      *
+     * @since [*next-version*]
+     *
      * @param BookingInterface $booking The booking instance.
      *
      * @return bool True of success, false on failure.
@@ -49,6 +57,8 @@ interface DiaryInterface
 
     /**
      * Deletes the booking with the given ID.
+     *
+     * @since [*next-version*]
      *
      * @param string|int $bookingId The ID of the booking.
      *
