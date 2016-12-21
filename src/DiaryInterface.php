@@ -21,11 +21,11 @@ interface DiaryInterface
     /**
      * Queries the storage for bookings.
      *
-     * @param array $query An associative array containing the query args.
+     * @param mixed $query The query.
      *
-     * @return Model\BookingInterface[] An array of booking instances that match the given query.
+     * @return BookingInterface[] An array of booking instances that match the given query.
      */
-    public function queryBookings(array $query);
+    public function queryBookings($query);
 
     /**
      * Inserts the given booking into storage.
