@@ -2,7 +2,7 @@
     "name": "rebelcode/diary-interface",
     "description": "Interfaces for the objects used by the Diary library.",
     "type": "library",
-    "license": "GPLv3",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "RebelCode",
