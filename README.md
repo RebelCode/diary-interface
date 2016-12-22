@@ -1,7 +1,9 @@
 # Diary interface
 
-[![Code Climate](https://codeclimate.com/github/RebelCodecom/diary-interface/badges/gpa.svg)](https://codeclimate.com/github/RebelCodecom/diary-interface)
 [![Build Status](https://travis-ci.org/RebelCodecom/diary-interface.svg?branch=master)](https://travis-ci.org/RebelCodecom/diary-interface)
+[![Code Climate](https://codeclimate.com/github/RebelCodecom/diary-interface/badges/gpa.svg)](https://codeclimate.com/github/RebelCodecom/diary-interface)
+[![Total Downloads](https://poser.pugx.org/rebelcode/diary-interface/downloads)](https://packagist.org/packages/rebelcode/diary-interface)
+[![Latest stable](https://img.shields.io/packagist/v/rebelcode/diary-interface.svg?style=flat-square)](https://packagist.org/packages/rebelcode/diary-interface)
 
 This repository consists of the base interfaces that make up the core API of the [Diary][1] library.
 
