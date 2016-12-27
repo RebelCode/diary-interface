@@ -29,6 +29,18 @@
         {
             "type": "vcs",
             "url": "https://github.com/Dhii/espresso-boolean-expression-interface"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/espresso-interface.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/evaluable-interface.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/data-key-value-aware-interface"
         }
     ]
 }
