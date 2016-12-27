@@ -9,8 +9,15 @@
             "email": "dev@rebelcode.com"
         }
     ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "RebelCode\\Diary\\": "src/"
+        }
+    },
     "require": {
-        "php": "^5.3 | ^7.0"
+        "php": "^5.3 | ^7.0",
+        "dhii/espresso-boolean-expression-interface": "dev-master"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
@@ -18,10 +25,10 @@
         "ptrofimov/xpmock": "^1.1",
         "codeclimate/php-test-reporter": "^0.3.2"
     },
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "RebelCode\\Diary\\": "src/"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/espresso-boolean-expression-interface"
         }
-    }
+    ]
 }
