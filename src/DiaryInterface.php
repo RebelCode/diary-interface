@@ -2,6 +2,8 @@
 
 namespace RebelCode\Diary;
 
+use \RebelCode\Diary\Query\BookingQueryInterface;
+
 /**
  * Represents the hub of the Diary library.
  *
@@ -25,11 +27,11 @@ interface DiaryInterface
      *
      * @since [*next-version*]
      *
-     * @param mixed $query The query.
+     * @param BookingQueryInterface $query The query instance.
      *
      * @return BookingInterface[] An array of booking instances that match the given query.
      */
-    public function queryBookings($query);
+    public function queryBookings(BookingQueryInterface $query);
 
     /**
      * Inserts the given booking into storage.
