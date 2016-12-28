@@ -12,7 +12,9 @@ interface BookingQueryInterface
     /**
      * Gets the query condition.
      *
-     * @return \Dhii\Espresso\BooleanExpressionInterface
+     * @since [*next-version*]
+     *
+     * @return BookingConditionInterface
      */
     public function getCondition();
 }
