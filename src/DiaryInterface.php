@@ -2,7 +2,7 @@
 
 namespace RebelCode\Diary;
 
-use \RebelCode\Diary\Query\BookingQueryInterface;
+use RebelCode\Diary\Query\BookingQueryInterface;
 
 /**
  * Represents the hub of the Diary library.
