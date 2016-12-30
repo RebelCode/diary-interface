@@ -5,14 +5,14 @@ namespace RebelCode\Diary\Query;
 /**
  * Any object that can describe a bookings query.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface BookingQueryInterface
 {
     /**
      * Gets the query condition.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return BookingConditionInterface
      */

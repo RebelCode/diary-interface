@@ -8,7 +8,7 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \RebelCode\Diary\Query\Condition\BookingPropertyTermInterface}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class BookingPropertyTermInterfaceTest extends TestCase
 {
@@ -20,7 +20,7 @@ class BookingPropertyTermInterfaceTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return BookingPropertyTermInterface
      */
@@ -40,7 +40,7 @@ class BookingPropertyTermInterfaceTest extends TestCase
      *
      * @covers \RebelCode\Diary\Query\Condition\BookingPropertyTermInterface
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

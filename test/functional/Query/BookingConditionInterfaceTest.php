@@ -5,7 +5,7 @@ namespace RebelCode\Diary\Query\Test;
 /**
  * Tests {@see \RebelCode\Diary\Query\BookingConditionInterface}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class BookingConditionInterfaceTest extends \Xpmock\TestCase
 {
@@ -17,7 +17,7 @@ class BookingConditionInterfaceTest extends \Xpmock\TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return \RebelCode\Diary\Query\BookingConditionInterface
      */
@@ -37,7 +37,7 @@ class BookingConditionInterfaceTest extends \Xpmock\TestCase
      *
      * @covers \RebelCode\Diary\Query\BookingConditionInterface
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {
