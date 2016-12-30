@@ -5,14 +5,14 @@ namespace RebelCode\Diary;
 /**
  * Describes any object that represents a particular period of time.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface PeriodInterface
 {
     /**
      * Gets the datetime for the start of the period.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return DateTimeInterface
      */
@@ -21,7 +21,7 @@ interface PeriodInterface
     /**
      * Gets the datetime for the end of the period.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return DateTimeInterface
      */

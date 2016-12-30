@@ -7,7 +7,7 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \RebelCode\Diary\DateTime\DateTimeInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class DateTimeInterfaceTest extends TestCase
 {
@@ -19,7 +19,7 @@ class DateTimeInterfaceTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return \RebelCode\Diary\DateTimeInterface
      */
@@ -37,7 +37,7 @@ class DateTimeInterfaceTest extends TestCase
      *
      * @covers \RebelCode\Diary\DateTimeInterface
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

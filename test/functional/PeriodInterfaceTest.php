@@ -7,7 +7,7 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \RebelCode\Diary\PeriodInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class PeriodInterfaceTest extends TestCase
 {
@@ -19,7 +19,7 @@ class PeriodInterfaceTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return \RebelCode\Diary\PeriodInterface
      */
@@ -38,7 +38,7 @@ class PeriodInterfaceTest extends TestCase
      *
      * @covers \RebelCode\Diary\PeriodInterface
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

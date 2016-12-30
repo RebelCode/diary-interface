@@ -7,14 +7,14 @@ use RebelCode\Diary\Query\BookingQueryInterface;
 /**
  * Represents the hub of the Diary library.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface DiaryInterface
 {
     /**
      * Gets the booking with the given ID.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|int $bookingId The ID of the booking.
      *
@@ -25,7 +25,7 @@ interface DiaryInterface
     /**
      * Queries the storage for bookings.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param BookingQueryInterface $query The query instance.
      *
@@ -38,7 +38,7 @@ interface DiaryInterface
      *
      * The ID of the given instance will be ignored. An ID will be assigned to the booking on success.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param BookingInterface $booking The booking instance.
      *
@@ -49,7 +49,7 @@ interface DiaryInterface
     /**
      * Updates an existing booking.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param BookingInterface $booking The booking instance.
      *
@@ -60,7 +60,7 @@ interface DiaryInterface
     /**
      * Deletes the booking with the given ID.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|int $bookingId The ID of the booking.
      *

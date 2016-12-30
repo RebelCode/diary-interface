@@ -7,7 +7,7 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \RebelCode\Diary\Model\BookingInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class BookingInterfaceTest extends TestCase
 {
@@ -19,7 +19,7 @@ class BookingInterfaceTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return \RebelCode\Diary\BookingInterface
      */
@@ -40,7 +40,7 @@ class BookingInterfaceTest extends TestCase
      *
      * @covers \RebelCode\Diary\BookingInterface
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {
