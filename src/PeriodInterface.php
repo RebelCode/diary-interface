@@ -26,4 +26,13 @@ interface PeriodInterface
      * @return DateTimeInterface
      */
     public function getEnd();
+
+    /**
+     * Gets the duration of the period.
+     *
+     * @since [*next-version*]
+     *
+     * @return int The duration in seconds.
+     */
+    public function getDuration();
 }

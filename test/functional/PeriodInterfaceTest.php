@@ -28,6 +28,7 @@ class PeriodInterfaceTest extends TestCase
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getStart()
             ->getEnd()
+            ->getDuration()
             ->new();
 
         return $mock;
