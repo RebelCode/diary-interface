@@ -10,11 +10,11 @@ namespace RebelCode\Diary;
 interface BookingInterface extends PeriodInterface
 {
     /**
-     * Gets the model's ID.
+     * Gets the booking ID.
      *
      * @since 0.1
      *
-     * @return int The integer ID.
+     * @return int The booking ID.
      */
     public function getId();
 }
