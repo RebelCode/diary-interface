@@ -26,7 +26,7 @@ class DiaryInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->queryBookings()
+            ->query()
             ->getBooking()
             ->insertBooking()
             ->updateBooking()
@@ -48,5 +48,6 @@ class DiaryInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
+        $this->assertInstanceOf('Dhii\\Storage\\AdapterInterface', $subject);
     }
 }
