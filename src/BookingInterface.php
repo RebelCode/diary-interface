@@ -3,11 +3,11 @@
 namespace RebelCode\Diary;
 
 /**
- * Describes any object that can represent a booked period of time.
+ * Any object that represents a booked period of time registered in a booking system.
  *
  * @since 0.1
  */
-interface BookingInterface extends PeriodInterface
+interface BookingInterface
 {
     /**
      * Gets the booking ID.
@@ -17,4 +17,13 @@ interface BookingInterface extends PeriodInterface
      * @return int The booking ID.
      */
     public function getId();
+
+    /**
+     * Gets the booked period of time.
+     *
+     * @since [*next-version*]
+     *
+     * @return PeriodInterface The booked period.
+     */
+    public function getPeriod();
 }
