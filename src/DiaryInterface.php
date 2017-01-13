@@ -2,14 +2,14 @@
 
 namespace RebelCode\Diary;
 
-use RebelCode\Diary\Query\BookingQueryInterface;
+use \Dhii\Storage\AdapterInterface;
 
 /**
  * Represents the hub of the Diary library.
  *
  * @since 0.1
  */
-interface DiaryInterface
+interface DiaryInterface extends AdapterInterface
 {
     /**
      * Gets the booking with the given ID.
@@ -21,17 +21,6 @@ interface DiaryInterface
      * @return BookingInterface|null The booking with the given ID or null if the ID was not found.
      */
     public function getBooking($bookingId);
-
-    /**
-     * Queries the storage for bookings.
-     *
-     * @since 0.1
-     *
-     * @param BookingQueryInterface $query The query instance.
-     *
-     * @return BookingInterface[] An array of booking instances that match the given query.
-     */
-    public function queryBookings(BookingQueryInterface $query);
 
     /**
      * Inserts the given booking into storage.
