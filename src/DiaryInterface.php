@@ -9,7 +9,7 @@ use \Dhii\Storage\AdapterInterface;
  *
  * @since 0.1
  */
-interface DiaryInterface extends AdapterInterface
+interface DiaryInterface
 {
     /**
      * Gets the booking with the given ID.
