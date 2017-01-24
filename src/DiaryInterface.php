@@ -2,7 +2,7 @@
 
 namespace RebelCode\Diary;
 
-use \Dhii\Storage\AdapterInterface;
+use Dhii\Storage\Query\QueryInterface;
 
 /**
  * Represents the hub of the Diary library.
@@ -12,48 +12,51 @@ use \Dhii\Storage\AdapterInterface;
 interface DiaryInterface
 {
     /**
-     * Gets the booking with the given ID.
+     * Gets the bookings that match a given query.
      *
-     * @since 0.1
+     * @since 0.3
      *
-     * @param string|int $bookingId The ID of the booking.
+     * @param QueryInterface $query The query.
      *
-     * @return BookingInterface|null The booking with the given ID or null if the ID was not found.
+     * @return BookingInterface[] The bookings that matched the query.
      */
-    public function getBooking($bookingId);
+    public function get(QueryInterface $query);
 
     /**
      * Inserts the given booking into storage.
      *
-     * The ID of the given instance will be ignored. An ID will be assigned to the booking on success.
+     * The ID of the given instance will be ignored.
+     * The inserted ID will be assigned to the booking on success.
      *
-     * @since 0.1
+     * @since 0.3
      *
-     * @param BookingInterface $booking The booking instance.
+     * @param BookingInterface $booking The booking instances. The ID will be ignored.
      *
-     * @return string|int The ID of the inserted booking or false on failure.
+     * @return int|bool The inserted ID on success, false on failure.
      */
-    public function insertBooking(BookingInterface $booking);
+    public function insert(BookingInterface $booking);
 
     /**
-     * Updates an existing booking.
+     * Updates the given booking in storage.
      *
-     * @since 0.1
+     * The given instance's ID must exist in storage.
+     *
+     * @since 0.3
      *
      * @param BookingInterface $booking The booking instance.
      *
      * @return bool True of success, false on failure.
      */
-    public function updateBooking(BookingInterface $booking);
+    public function update(BookingInterface $booking);
 
     /**
-     * Deletes the booking with the given ID.
+     * Deletes the bookings that match a given query.
      *
-     * @since 0.1
+     * @since 0.3
      *
-     * @param string|int $bookingId The ID of the booking.
+     * @param BookingQueryInterface $query The query.
      *
      * @return bool True on success, false on failure.
      */
-    public function deleteBooking($bookingId);
+    public function delete(QueryInterface $query);
 }
