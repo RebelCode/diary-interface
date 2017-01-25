@@ -14,9 +14,9 @@ interface DiaryInterface
     /**
      * Gets the bookings that match a given query.
      *
-     * @since 0.3
+     * @since [*next-version*]
      *
-     * @param QueryInterface $query The query.
+     * @param QueryInterface $query The query that defines the criteria.
      *
      * @return BookingInterface[] The bookings that matched the query.
      */
@@ -28,7 +28,7 @@ interface DiaryInterface
      * The ID of the given instance will be ignored.
      * The inserted ID will be assigned to the booking on success.
      *
-     * @since 0.3
+     * @since [*next-version*]
      *
      * @param BookingInterface $booking The booking instances. The ID will be ignored.
      *
@@ -41,7 +41,7 @@ interface DiaryInterface
      *
      * The given instance's ID must exist in storage.
      *
-     * @since 0.3
+     * @since [*next-version*]
      *
      * @param BookingInterface $booking The booking instance.
      *
@@ -52,9 +52,9 @@ interface DiaryInterface
     /**
      * Deletes the bookings that match a given query.
      *
-     * @since 0.3
+     * @since [*next-version*]
      *
-     * @param BookingQueryInterface $query The query.
+     * @param QueryInterface $query The query that defines the criteria.
      *
      * @return bool True on success, false on failure.
      */
