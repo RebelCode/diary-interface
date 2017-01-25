@@ -7,7 +7,7 @@ namespace RebelCode\Diary;
  *
  * @since 0.1
  */
-interface BookingInterface
+interface BookingInterface extends Storage\ChangesetInterface
 {
     /**
      * Gets the booking ID.
