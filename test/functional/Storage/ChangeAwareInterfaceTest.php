@@ -5,23 +5,23 @@ namespace RebelCode\Diary\FuncTest\Storage;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \myns\ChangesetInterface}.
+ * Tests {@see RebelCode\Diary\Storage\ChangeAwareInterface}.
  *
  * @since [*next-version*]
  */
-class ChangesetInterfaceTest extends TestCase
+class ChangeAwareInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\\Diary\\Storage\\ChangesetInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\\Diary\\Storage\\ChangeAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return RebelCode\Diary\Storage\ChangesetInterface
+     * @return RebelCode\Diary\Storage\ChangeAwareInterface
      */
     public function createInstance()
     {
