@@ -2,12 +2,14 @@
 
 namespace RebelCode\Diary;
 
+use \RebelCode\Diary\DateTime\PeriodInterface;
+
 /**
  * Any object that represents a booked period of time registered in a booking system.
  *
  * @since 0.1
  */
-interface BookingInterface extends Storage\ChangeAwareInterface
+interface BookingInterface
 {
     /**
      * Gets the booking ID.

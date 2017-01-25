@@ -28,7 +28,6 @@ class BookingInterfaceTest extends TestCase
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getId()
             ->getPeriod()
-            ->getChanges()
             ->new();
 
         return $mock;
@@ -46,6 +45,5 @@ class BookingInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(static::TEST_SUBJECT_CLASSNAME, $subject);
-        $this->assertInstanceOf('RebelCode\\Diary\\Storage\\ChangeAwareInterface', $subject);
     }
 }
