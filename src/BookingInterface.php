@@ -23,7 +23,7 @@ interface BookingInterface
     /**
      * Gets the booked period of time.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @return PeriodInterface The booked period.
      */

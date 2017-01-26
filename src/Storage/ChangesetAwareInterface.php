@@ -5,14 +5,14 @@ namespace RebelCode\Diary\Storage;
 /**
  * Something that can have a changeset.
  *
- * @since [*next-version*]
+ * @since 0.3
  */
 interface ChangesetAwareInterface
 {
     /**
      * Retrieves the changeset.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @return ChangesetInterface
      */

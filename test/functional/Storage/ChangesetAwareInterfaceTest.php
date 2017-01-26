@@ -7,7 +7,7 @@ use Xpmock\TestCase;
 /**
  * Tests {@see RebelCode\Diary\Storage\ChangesetAwareInterface}.
  *
- * @since [*next-version*]
+ * @since 0.3
  */
 class ChangesetAwareInterfaceTest extends TestCase
 {
@@ -19,7 +19,7 @@ class ChangesetAwareInterfaceTest extends TestCase
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @return RebelCode\Diary\Storage\ChangesetAwareInterface
      */
@@ -35,7 +35,7 @@ class ChangesetAwareInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.3
      */
     public function testCanBeCreated()
     {

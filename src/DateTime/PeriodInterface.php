@@ -30,7 +30,7 @@ interface PeriodInterface
     /**
      * Gets the duration of the period.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @return int The duration in seconds.
      */
