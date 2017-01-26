@@ -2,6 +2,8 @@
 
 namespace RebelCode\Diary;
 
+use \RebelCode\Diary\DateTime\PeriodInterface;
+
 /**
  * Any object that represents a booked period of time registered in a booking system.
  *

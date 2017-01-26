@@ -2,7 +2,8 @@
 
 namespace RebelCode\Diary;
 
-use Dhii\Storage\Query\QueryInterface;
+use \Dhii\Storage\Query\QueryInterface;
+use \RebelCode\Diary\Storage\ChangesetInterface;
 
 /**
  * Represents the hub of the Diary library.
@@ -37,17 +38,24 @@ interface DiaryInterface
     public function insert(BookingInterface $booking);
 
     /**
-     * Updates the given booking in storage.
+     * Updates the bookings in storage that match a specific query.
      *
-     * The given instance's ID must exist in storage.
+     * If a {@see ChangesetInterface} is given as the first parameter, only the fields specified
+     * by the changeset will be updated. If a {@see BookingInterface} instance is given, all the
+     * fields will be updated except for the IDs.
+     *
+     * The {@see QueryInterface} parameter can be omitted if the first parameter is a {@see BookingInterface}
+     * instance. In this case, only the booking with the instance's ID will be updated.
      *
      * @since [*next-version*]
      *
-     * @param BookingInterface $booking The booking instance.
+     * @param BookingInterface|ChangesetInterface $changes A booking instance or a changeset.
+     * @param QueryInterface                      $query   The query that defines the criteria.
+     *                                                     Default: null
      *
      * @return bool True of success, false on failure.
      */
-    public function update(BookingInterface $booking);
+    public function update($changes, QueryInterface $query = null);
 
     /**
      * Deletes the bookings that match a given query.
