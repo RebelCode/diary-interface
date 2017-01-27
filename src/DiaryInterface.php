@@ -2,8 +2,8 @@
 
 namespace RebelCode\Diary;
 
-use \Dhii\Storage\Query\QueryInterface;
-use \RebelCode\Diary\Storage\ChangesetInterface;
+use Dhii\Storage\Query\QueryInterface;
+use RebelCode\Diary\Storage\ChangesetInterface;
 
 /**
  * Represents the hub of the Diary library.
