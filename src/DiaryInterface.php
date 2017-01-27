@@ -19,7 +19,7 @@ interface DiaryInterface
      *
      * @param QueryInterface $query The query that defines the criteria.
      *
-     * @return BookingInterface[]|null An array of booking instances or null on failure.
+     * @return BookingInterface[]|bool An array of booking instances or false on failure.
      */
     public function get(QueryInterface $query);
 
