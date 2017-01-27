@@ -2,8 +2,6 @@
 
 namespace RebelCode\Diary\Storage;
 
-use Dhii\Expression\ExpressionInterface;
-
 /**
  * Something that represents a set of changes.
  *
@@ -16,7 +14,9 @@ interface ChangesetInterface
      *
      * @since 0.3
      *
-     * @return ExpressionInterface[] An associative array of field names as keys and expressions as values.
+     * @return array An associative array of field names as keys and the changed values.
+     *               Primitive values will be taken literal while objects are expected to be
+     *               of type {@see Dhii\Evaluable\EvaluableInterface}.
      */
     public function getChanges();
 }
