@@ -3,6 +3,7 @@
 namespace RebelCode\Diary;
 
 use Dhii\Storage\Query\QueryInterface;
+use RebelCode\Diary\Storage\ChangesetInterface;
 
 /**
  * Represents the hub of the Diary library.
@@ -14,11 +15,11 @@ interface DiaryInterface
     /**
      * Gets the bookings that match a given query.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @param QueryInterface $query The query that defines the criteria.
      *
-     * @return BookingInterface[] The bookings that matched the query.
+     * @return BookingInterface[]|bool An array of booking instances or false on failure.
      */
     public function get(QueryInterface $query);
 
@@ -28,7 +29,7 @@ interface DiaryInterface
      * The ID of the given instance will be ignored.
      * The inserted ID will be assigned to the booking on success.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @param BookingInterface $booking The booking instances. The ID will be ignored.
      *
@@ -37,22 +38,29 @@ interface DiaryInterface
     public function insert(BookingInterface $booking);
 
     /**
-     * Updates the given booking in storage.
+     * Updates the bookings in storage that match a specific query.
      *
-     * The given instance's ID must exist in storage.
+     * If a {@see ChangesetInterface} is given as the first parameter, only the fields specified
+     * by the changeset will be updated. If a {@see BookingInterface} instance is given, all the
+     * fields will be updated except for the IDs.
      *
-     * @since [*next-version*]
+     * The {@see QueryInterface} parameter can be omitted if the first parameter is a {@see BookingInterface}
+     * instance. In this case, only the booking with the instance's ID will be updated.
      *
-     * @param BookingInterface $booking The booking instance.
+     * @since 0.3
+     *
+     * @param BookingInterface|ChangesetInterface $changes A booking instance or a changeset.
+     * @param QueryInterface                      $query   The query that defines the criteria.
+     *                                                     Default: null
      *
      * @return bool True of success, false on failure.
      */
-    public function update(BookingInterface $booking);
+    public function update($changes, QueryInterface $query = null);
 
     /**
      * Deletes the bookings that match a given query.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @param QueryInterface $query The query that defines the criteria.
      *

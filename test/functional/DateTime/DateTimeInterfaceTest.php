@@ -1,34 +1,32 @@
 <?php
 
-namespace RebelCode\Diary\Test;
+namespace RebelCode\Diary\FuncTest\DateTime;
 
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \RebelCode\Diary\PeriodInterface}.
+ * Tests {@see \RebelCode\Diary\DateTime\DateTimeInterface}.
  *
  * @since 0.1
  */
-class PeriodInterfaceTest extends TestCase
+class DateTimeInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      */
-    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\PeriodInterface';
+    const TEST_SUBJECT_CLASSNAME = '\\RebelCode\\Diary\\DateTime\\DateTimeInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return \RebelCode\Diary\PeriodInterface
+     * @return \RebelCode\Diary\DateTime\DateTimeInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getStart()
-            ->getEnd()
-            ->getDuration()
+            ->getTimestamp()
             ->new();
 
         return $mock;
@@ -36,8 +34,6 @@ class PeriodInterfaceTest extends TestCase
 
     /**
      * Tests whether a valid instance of the test subject can be created.
-     *
-     * @covers \RebelCode\Diary\PeriodInterface
      *
      * @since 0.1
      */

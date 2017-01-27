@@ -1,6 +1,6 @@
 <?php
 
-namespace RebelCode\Diary;
+namespace RebelCode\Diary\DateTime;
 
 /**
  * Describes any object that represents a particular period of time.
@@ -30,7 +30,7 @@ interface PeriodInterface
     /**
      * Gets the duration of the period.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @return int The duration in seconds.
      */
